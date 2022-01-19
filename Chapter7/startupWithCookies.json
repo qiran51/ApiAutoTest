@@ -1,0 +1,51 @@
+[
+  {
+    "description": "模拟返回cookies信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true",
+        "status": "10000"
+      },
+      "text": "success"
+    }
+  },
+
+  {
+    "description": "模拟带Cookies的get请求",
+    "request": {
+      "uri": "/get/with/cookies",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      }
+    },
+    "response": {
+      "text": "getCookiesSuccess"
+    }
+  },
+  {
+    "description": "模拟带Cookies的post请求",
+    "request": {
+      "uri": "/post/with/cookies",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "json": {
+        "name": "zhangjialing",
+        "age": "19"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "zhangjialing": "success",
+        "status": "1"
+      }
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "description": "模拟带headers的post请求",
+    "request": {
+      "uri": "/post/with/headers",
+      "method": "post",
+      "headers": {
+        "Cookie": "true"
+      },
+      "json": {
+        "name": "zhangjialing",
+        "age": "19"
+      }
+    },
+    "response": {
+      "json": {
+        "code": "200",
+        "result": "success"
+      }
+    }
+  }
+]

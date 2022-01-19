@@ -1,0 +1,25 @@
+[
+  {
+    "description": "模拟post请求",
+    "request": {
+      "uri": "/postDemo",
+      "method": "post"
+    },
+    "response": {
+      "text": "success"
+    }
+  },{
+    "description": "模拟带参的post请求",
+    "request": {
+      "uri": "/postWithParameters",
+      "method": "post",
+      "forms": {
+        "name": "zhangjialing",
+        "sex": "female"
+      }
+    },
+    "response": {
+      "text": "PostRequestsuccess"
+    }
+  }
+]

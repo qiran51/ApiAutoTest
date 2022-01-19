@@ -1,0 +1,4 @@
+java -jar moco-runner-0.11.0-standalone.jar -p 8888 -c json文件路径(相对路径/绝对路径)
+
+如：
+    java -jar ./moco-runner-0.11.0-standalone.jar http -p 8888 -c startup1.json

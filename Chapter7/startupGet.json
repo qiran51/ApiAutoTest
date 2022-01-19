@@ -1,0 +1,31 @@
+[
+  {
+    "description": "模拟无参get请求",
+    "request":{
+      "uri": "/getDemo",
+      "method": "get"
+    },
+    "response": {
+      "text": "这是一个无参的get请求",
+      "headers": {
+        "Content-Type": "text/html;charset=gdk"
+      }
+    }
+  },{
+    "description": "模拟带参的get请求",
+    "request": {
+      "uri": "/getWithParameters",
+      "method": "get",
+      "queries": {
+        "name": "zhangjialing",
+        "age": "19"
+      }
+    },
+    "response": {
+      "text": "我张佳玲回来了！！！！哈哈哈哈哈",
+      "headers": {
+        "Content-Type": "text/html;charset=gdk"
+      }
+    }
+  }
+]
