@@ -1,6 +1,6 @@
-package com.sourse.utils;
+package com.course.utils;
 
-import com.sourse.model.InterfaceName;
+import com.course.model.InterfaceName;
 import java.util.Locale;
 import java.util.ResourceBundle;
 
@@ -21,9 +21,9 @@ public class ConfigFile {
         if (name == InterfaceName.LOGIN){
             uri = bundle.getString("login.uri");
         }
-//        if (name == InterfaceName.ADDUSERINFO){
-//            uri = bundle.getString("addUser.uri");
-//        }
+        if (name == InterfaceName.ADDUSERINFO){
+            uri = bundle.getString("addUser.uri");
+        }
         if (name == InterfaceName.GETUSERINFO){
             uri = bundle.getString("getUserInfo.uri");
         }

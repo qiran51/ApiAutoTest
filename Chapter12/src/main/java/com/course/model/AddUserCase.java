@@ -1,4 +1,4 @@
-package com.sourse.model;
+package com.course.model;
 
 import lombok.Data;
 
@@ -9,6 +9,6 @@ public class AddUserCase {
     private String sex;
     private String age;
     private String permission;
-    private String idDelete;
+    private String isDelete;
     private String expected;
 }

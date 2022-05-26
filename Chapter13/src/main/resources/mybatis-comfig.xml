@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--这个代表模板，遵照这个模板-->
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--具体配置-->
+    <typeAliases>
+        <package name="com.course.model"/>
+    </typeAliases>
+    <!---->
+    <mappers>
+        <mapper resource="mapper/mysql.xml"></mapper>
+    </mappers>
+</configuration>

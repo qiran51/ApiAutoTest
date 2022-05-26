@@ -1,8 +1,8 @@
-package com.sourse.cases;
+package com.course.cases;
 
-import com.sourse.config.TestConfig;
-import com.sourse.model.GetUserListCase;
-import com.sourse.utils.DatabaseUtil;
+import com.course.config.TestConfig;
+import com.course.model.GetUserListCase;
+import com.course.utils.DatabaseUtil;
 import org.apache.ibatis.session.SqlSession;
 import org.testng.annotations.Test;
 
