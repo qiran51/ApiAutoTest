@@ -1,0 +1,87 @@
+2022-05-24 22:18:52.760 [main] INFO  com.course.Application - Starting Application on LAPTOP-94U18F6E with PID 1672 (D:\ApiAutoTest\Chapter13\target\classes started by 33426 in D:\ApiAutoTest)
+2022-05-24 22:18:52.765 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2022-05-24 22:18:52.877 [main] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Tue May 24 22:18:52 CST 2022]; root of context hierarchy
+2022-05-24 22:18:54.145 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2022-05-24 22:18:54.786 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1f42beb4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-05-24 22:18:55.633 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8888 (http)
+2022-05-24 22:18:55.653 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-05-24 22:18:55.655 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+2022-05-24 22:18:55.810 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-05-24 22:18:55.810 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2933 ms
+2022-05-24 22:18:56.116 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2022-05-24 22:18:56.121 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2022-05-24 22:18:56.121 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2022-05-24 22:18:56.121 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2022-05-24 22:18:56.122 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2022-05-24 22:18:57.434 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManager.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2022-05-24 22:18:57.436 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/upDateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManager.upDateUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2022-05-24 22:18:57.437 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManager.login(javax.servlet.http.HttpServletResponse,com.course.model.User)
+2022-05-24 22:18:57.438 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public boolean com.course.controller.UserManager.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2022-05-24 22:18:57.439 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2022-05-24 22:18:57.444 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2022-05-24 22:18:57.446 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2022-05-24 22:18:57.447 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2022-05-24 22:18:57.455 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2022-05-24 22:18:57.456 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2022-05-24 22:18:58.465 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Tue May 24 22:18:52 CST 2022]; root of context hierarchy
+2022-05-24 22:18:58.553 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-05-24 22:18:58.553 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-05-24 22:18:58.605 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2022-05-24 22:18:58.884 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2022-05-24 22:18:58.894 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2022-05-24 22:18:58.895 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2022-05-24 22:18:58.923 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2022-05-24 22:18:58.938 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2022-05-24 22:18:59.610 [main] INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8888 (http)
+2022-05-24 22:18:59.618 [main] INFO  com.course.Application - Started Application in 7.407 seconds (JVM running for 8.182)
+2022-05-24 22:19:04.047 [http-nio-8888-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2022-05-24 22:19:04.047 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2022-05-24 22:19:04.080 [http-nio-8888-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+2022-05-24 22:19:05.046 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 22:19:05.047 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 22:19:05.131 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是0
+2022-05-24 22:19:05.176 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - Cookies为空
+2022-05-24 22:19:05.180 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 添加用户数量是1
+2022-05-24 22:19:28.888 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 22:19:28.888 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 22:19:28.972 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是0
+2022-05-24 22:19:29.026 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - Cookies为空
+2022-05-24 22:19:29.030 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 添加用户数量是1
+2022-05-24 22:21:14.890 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 22:21:14.890 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 22:28:46.067 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 22:28:46.067 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 22:29:14.898 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 22:29:14.898 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 22:29:30.917 [http-nio-8888-exec-6] WARN  org.springframework.web.servlet.PageNotFound - Request method 'GET' not supported
+2022-05-24 22:31:32.863 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 22:31:32.863 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 22:35:07.568 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是0
+2022-05-24 22:36:08.335 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 22:36:08.335 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 22:36:43.899 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 查询到的结果是0
+2022-05-24 22:52:00.031 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 22:52:00.031 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 22:58:53.984 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 22:58:53.984 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 23:00:25.065 [http-nio-8888-exec-9] INFO  com.course.controller.UserManager - 查询到的结果是0
+2022-05-24 23:04:59.758 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 23:04:59.759 [http-nio-8888-exec-10] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 23:04:59.819 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是0
+2022-05-24 23:04:59.862 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - Cookies为空
+2022-05-24 23:04:59.873 [http-nio-8888-exec-2] INFO  com.course.controller.UserManager - 添加用户数量是1
+2022-05-24 23:05:12.137 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 23:05:12.137 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 23:08:10.141 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 查询到的结果是0
+2022-05-24 23:09:29.118 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 23:09:29.118 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 23:11:15.263 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是0
+2022-05-24 23:19:45.104 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 23:19:45.104 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 23:45:01.988 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 23:45:01.989 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 查询到的用户是张三
+2022-05-24 23:45:39.407 [http-nio-8888-exec-3] INFO  com.course.controller.UserManager - 查询到的结果是0
+2022-05-24 23:45:40.220 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - cookie验证通过
+2022-05-24 23:45:40.225 [http-nio-8888-exec-1] INFO  com.course.controller.UserManager - 添加用户数量是1
+2022-05-24 23:46:03.998 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的结果是1
+2022-05-24 23:46:03.998 [http-nio-8888-exec-7] INFO  com.course.controller.UserManager - 查询到的用户是张三

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--    外接属性配置文件 ，减少耦合-->
+    <!--<properties resource="mysql.properties"></properties>-->
+    <!--    这个包下的实体类自动起别名，为类名，无视大小写-->
+    <!--
+    <typeAliases>
+        <package name="domain"/>
+    </typeAliases>
+   -->
+    <!--    配置数据源-->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"></transactionManager>
+            <!--            pooled  连接池-->
+            <dataSource type="POOLED">
+                <!--                ${key}引用外部properties中的key
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+                -->
+                <property name="driver" value="com.mysql.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://127.0.0.1:3306/course"/>
+                <property name="username" value="root"/>
+                <property name="password" value="123456"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <!--    接口Mapper文件的路径，按包指定-->
+    <mappers>
+        <mapper resource="mapper/SQLMapper.xml"></mapper>
+    </mappers>
+</configuration>

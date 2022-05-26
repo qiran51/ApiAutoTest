@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="用户管理系统测试套件">
+    <test name = "用户管理系统测试用例">
+        <classes>
+<!--            登录-->
+            <class name = "com.course.cases.LoginTest">
+                <methods>
+                    <include name = "loginTrue"></include>
+                    <include name = "loginFalse"></include>
+                </methods>
+            </class>
+<!--            添加用户-->
+            <class name = "com.course.cases.AddUserTest">
+                <methods>
+                    <include name = "addUser"></include>
+                </methods>
+            </class>
+<!--            获取用户列表信息-->
+            <class name = "com.course.cases.GetUserInfoListTest">
+                <methods>
+                    <include name = "getUserListInfo"></include>
+                </methods>
+            </class>
+<!--            获取用户信息-->
+            <class name = "com.course.cases.GetUserInfoTest">
+                <methods>
+                    <include name = "getUserInfo"></include>
+                </methods>
+            </class>
+<!--            更新/删除用户信息-->
+            <class name = "com.course.cases.UpDateUserInfoTest">
+                <methods>
+                    <include name = "upDateUserInfo"></include>
+                    <include name = "deleteUser"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+<!--    添加测试报告监听器-->
+    <listeners>
+        <listener class-name="com.course.config.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+
+</suite>
