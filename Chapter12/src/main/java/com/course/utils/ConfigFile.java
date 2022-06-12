@@ -28,7 +28,7 @@ public class ConfigFile {
             uri = bundle.getString("getUserInfo.uri");
         }
         if (name == InterfaceName.UPDATEUSERINFO){
-            uri = bundle.getString("updateUserInfo.uri");
+            uri = bundle.getString("upDateUserInfo.uri");
         }
 
         testUrl = address + uri;

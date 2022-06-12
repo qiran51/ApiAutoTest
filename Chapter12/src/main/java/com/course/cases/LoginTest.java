@@ -30,7 +30,7 @@ public class LoginTest {
         TestConfig.getUserListUrl = ConfigFile.getUrl(InterfaceName.GETUSERLIST);
         TestConfig.addUserUrl = ConfigFile.getUrl(InterfaceName.ADDUSERINFO);
         TestConfig.loginUrl = ConfigFile.getUrl(InterfaceName.LOGIN);
-        TestConfig.updateUserInfoUrl = ConfigFile.getUrl(InterfaceName.UPDATEUSERINFO);
+        TestConfig.upDateUserInfo = ConfigFile.getUrl(InterfaceName.UPDATEUSERINFO);
 
         //newHttpClient
         TestConfig.closeableHttpClient = HttpClients.createDefault();
@@ -66,8 +66,6 @@ public class LoginTest {
     }
 
     private String getResult(LoginCase loginCase) throws IOException {
-        TestConfig.cookieStore = new BasicCookieStore();
-        TestConfig.closeableHttpClient = HttpClients.custom().setDefaultCookieStore(TestConfig.cookieStore).build();
 
         //创建请求
         HttpPost post = new HttpPost(TestConfig.loginUrl);
@@ -78,6 +76,8 @@ public class LoginTest {
         post.setHeader("content-type","application/json");
         StringEntity entity = new StringEntity(param.toString(),"utf-8");
         post.setEntity(entity);
+        TestConfig.cookieStore = new BasicCookieStore();
+        TestConfig.closeableHttpClient = HttpClients.custom().setDefaultCookieStore(TestConfig.cookieStore).build();
         String result;
         //发起请求
         CloseableHttpResponse closeableHttpResponse = TestConfig.closeableHttpClient.execute(post);

@@ -21,7 +21,7 @@ public class AddUserTest {
 
     //依赖login组
     @Test(dependsOnGroups = "loginTrue",description = "添加用户接口测试")
-    public void addUser() throws IOException {
+    public void addUser() throws IOException, InterruptedException {
         SqlSession session = DatabaseUtil.getSqlSession();
         AddUserCase addUserCase = session.selectOne("addUserCase",1);
         System.out.println(addUserCase.toString());
@@ -31,10 +31,11 @@ public class AddUserTest {
         //查询出数据库中的数据，并添加到getResult方法中
         String result = getResult(addUserCase);
 
+        Thread.sleep(5000);
 
         //验证请求结果结果
         User user = session.selectOne("addUser",addUserCase);
-        System.out.println(user.toString());
+        System.out.println("------------"+user.toString());
         Assert.assertEquals(addUserCase.getExpected(),result);
     }
 

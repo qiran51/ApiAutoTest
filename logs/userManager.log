@@ -1,10 +1,3 @@
-2022-05-25 00:06:37.531 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的结果是1
-2022-05-25 00:06:37.540 [http-nio-8888-exec-6] INFO  com.course.controller.UserManager - 查询到的用户是张三
-2022-05-25 00:06:37.604 [http-nio-8888-exec-4] INFO  com.course.controller.UserManager - 查询到的结果是0
-2022-05-25 00:06:37.649 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - cookie验证通过
-2022-05-25 00:06:37.653 [http-nio-8888-exec-8] INFO  com.course.controller.UserManager - 添加用户数量是1
-2022-05-25 00:07:58.445 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的结果是1
-2022-05-25 00:07:58.445 [http-nio-8888-exec-5] INFO  com.course.controller.UserManager - 查询到的用户是张三
-2022-05-25 00:08:19.291 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Tue May 24 22:18:52 CST 2022]; root of context hierarchy
-2022-05-25 00:08:19.348 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
-2022-05-25 00:08:19.359 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2022-06-10 19:52:20.207 [Thread-3] INFO  o.s.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@16293aa2: startup date [Thu Jun 09 22:33:54 CST 2022]; root of context hierarchy
+2022-06-10 19:52:20.256 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2022-06-10 19:52:20.271 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown

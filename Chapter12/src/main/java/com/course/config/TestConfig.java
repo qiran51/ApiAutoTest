@@ -7,7 +7,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 public class TestConfig {
     //跟配置文件里面的名称对应
     public static String loginUrl;
-    public static String updateUserInfoUrl;
+    public static String upDateUserInfo;
     public static String getUserListUrl;
     public static String getUserInfoUrl;
     public static String addUserUrl;
